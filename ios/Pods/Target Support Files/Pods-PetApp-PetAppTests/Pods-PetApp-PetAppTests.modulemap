@@ -1,0 +1,6 @@
+module Pods_PetApp_PetAppTests {
+  umbrella header "Pods-PetApp-PetAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
