@@ -1,47 +1,54 @@
-// const categories = [
-//     {
-//       id: "plants",
-//       name: "Plants",
-//       tags: ["products", "inspirations"],
-//       count: 147,
-//       image: require("../assets/icons/plants.png")
-//     },
-//     {
-//       id: "seeds",
-//       name: "Seeds",
-//       tags: ["products", "shop"],
-//       count: 16,
-//       image: require("../assets/icons/seeds.png")
-//     },
-//     {
-//       id: "flowers",
-//       name: "Flowers",
-//       tags: ["products", "inspirations"],
-//       count: 68,
-//       image: require("../assets/icons/flowers.png")
-//     },
-//     {
-//       id: "sprayers",
-//       name: "Sprayers",
-//       tags: ["products", "shop"],
-//       count: 17,
-//       image: require("../assets/icons/sprayers.png")
-//     },
-//     {
-//       id: "pots",
-//       name: "Pots",
-//       tags: ["products", "shop"],
-//       count: 47,
-//       image: require("../assets/icons/pots.png")
-//     },
-//     {
-//       id: "fertilizers",
-//       name: "fertilizers",
-//       tags: ["products", "shop"],
-//       count: 47,
-//       image: require("../assets/icons/fertilizers.png")
-//     }
-//   ];
+const categories = [
+    {
+      id: "1",
+      name: "Golden Retriever",
+    //   tags: ["products", "inspirations"],
+    //   count: 147,
+    //   image: require("../assets/icons/plants.png")
+    },
+    {
+      id: "2",
+      name: "Pit Bull",
+    //   tags: ["products", "shop"],
+    //   count: 16,
+    //   image: require("../assets/icons/seeds.png")
+    },
+    {
+      id: "3",
+      name: "German Shephard",
+    //   tags: ["products", "inspirations"],
+    //   count: 68,
+    //   image: require("../assets/icons/flowers.png")
+    },
+    {
+      id: "4",
+      name: "Labrador",
+    //   tags: ["products", "shop"],
+    //   count: 17,
+    //   image: require("../assets/icons/sprayers.png")
+    },
+    {
+      id: "5",
+      name: "Husky",
+    //   tags: ["products", "shop"],
+    //   count: 47,
+    //   image: require("../assets/icons/pots.png")
+    },
+    {
+      id: "6",
+      name: "Greyhound",
+    //   tags: ["products", "shop"],
+    //   count: 47,
+    //   image: require("../assets/icons/fertilizers.png")
+    },
+    {
+      id: "7",
+      name: "Greyhounds",
+    //   tags: ["products", "shop"],
+    //   count: 47,
+    //   image: require("../assets/icons/fertilizers.png")
+    }
+  ];
   
 //   const products = [
 //     {
@@ -85,5 +92,7 @@
 //     notifications: true,
 //     newsletter: false
 //   };
+
+export { categories }
   
 //   export { categories, explore, products, profile };

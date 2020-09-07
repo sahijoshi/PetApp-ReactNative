@@ -1,6 +1,5 @@
 import React from 'react'
 import { TouchableOpacity, Text } from 'react-native'
-import { theme } from '../constants'
 import style from "../styles/Styles";
 
 const Button = ({title, align, bgcolor, titleFont, titleColor, onPress}) => {

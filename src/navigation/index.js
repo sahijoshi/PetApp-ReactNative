@@ -39,7 +39,7 @@ const AppNavigation = () => {
                 <Stack.Screen
                     name="Dashboard"
                     component={Dashboard}
-                    options={{ title: 'Dashboard'}}
+                    options={{ title: 'Home'}}
                 />
 
                 {/* <Stack.Screen
