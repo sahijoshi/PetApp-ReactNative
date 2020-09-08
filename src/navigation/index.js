@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from '../screens/Welcome'
 import Login from '../screens/Login'
 import Dashboard from '../screens/Dashboard'
+import DetailScreen from '../screens/DetailScreen'
 
 const Stack = createStackNavigator()
 
@@ -15,31 +16,37 @@ const AppNavigation = () => {
         <NavigationContainer>
             <Stack.Navigator
                 initialRouteName="Welcome"
-                screenOptions={{ 
+                screenOptions={{
                     headerBackTitleVisible: false,
-                    headerBackImage: () => (<Image source={require('../assets/icons/back.png')}/>),
+                    headerBackImage: () => (<Image source={require('../assets/icons/back.png')} />),
                     headerLeftContainerStyle: {
                         marginLeft: 20
                     },
                     headerStyle: {
-                        
+
                     }
                 }}
             >
                 <Stack.Screen
                     name="Welcome"
                     component={Welcome}
-                    options={{ title: 'Welcome Screen', headerShown: false}}
+                    options={{ title: 'Welcome Screen', headerShown: false }}
                 />
                 <Stack.Screen
                     name="Login"
                     component={Login}
-                    options={{ title: ''}}
+                    options={{ title: '' }}
                 />
                 <Stack.Screen
                     name="Dashboard"
                     component={Dashboard}
-                    options={{ title: 'Home'}}
+                    options={{ title: 'Home' }}
+                />
+                <Stack.Screen
+                    name="DetailScreen"
+                    component={DetailScreen}
+                    options={{ title: 'DetailScreen', headerShown:false }}
+                    
                 />
 
                 {/* <Stack.Screen
