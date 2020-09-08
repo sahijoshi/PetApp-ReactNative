@@ -2,11 +2,12 @@ const colors = {
     accent: "#cfdbe3",
     primary: "#4183ac",
     secondary: "#2c5b79",
+    tertiary: "#e6eff5",
     black: "#323643",
     white: "#FFFFFF",
     darkGray: "#404040",
-    gray: "#9DA3B4",
-    gray2: "#C5CCD6"
+    gray: "#787b82",
+    gray2: "#dfe4eb"
   };
   
   const sizes = {

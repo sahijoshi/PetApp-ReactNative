@@ -22,8 +22,7 @@ const HomeBody = (props) => {
   }
 
   actionOnItem = (item) => {
-    props.navigation.navigate('DetailScreen')
-    console.log(item)
+    props.navigation.navigate('DetailScreen', {dog: item})
   }
 
   renderItem = ({ item, index }) => {
