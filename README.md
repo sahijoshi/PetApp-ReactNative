@@ -7,7 +7,7 @@ The app demonstrates the use of props, state, and hooks using functional compone
 # Preview
 <img src="https://github.com/sahijoshi/PetApp-ReactNative/raw/master/Assets/preview.gif" width="285"/>
 
-# Preview
+# Screenshots
 <img src="https://github.com/sahijoshi/PetApp-ReactNative/raw/master/Assets/1.png" width="285"/>
 <img src="https://github.com/sahijoshi/PetApp-ReactNative/raw/master/Assets/2.png" width="285"/>
 <img src="https://github.com/sahijoshi/PetApp-ReactNative/raw/master/Assets/3.png" width="285"/>
