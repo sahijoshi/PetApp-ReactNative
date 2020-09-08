@@ -4,8 +4,6 @@ import { theme } from '../constants';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // alignItems: "center",
-        // justifyContent: "center",
     },
     h1: {
         fontSize: theme.sizes.h1,
@@ -13,7 +11,7 @@ const styles = StyleSheet.create({
     },
     h2: {
         fontSize: theme.sizes.h2,
-        fontWeight: "500", 
+        fontWeight: "600", 
     },
     h3: {
         fontSize: theme.sizes.h3,

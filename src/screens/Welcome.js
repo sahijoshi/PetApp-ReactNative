@@ -103,10 +103,10 @@ const Welcome = (props) => {
   return (
     <View style={style.container}>
       <View style={{ flex: 2, alignItems: "center", justifyContent: "center" }}>
-        <Text style={[style.h1, { alignItems: 'center' }]}>Your Home.
-          <Text style={{ color: theme.colors.primary }}> Greener.</Text>
+        <Text style={[style.h1, { alignItems: 'center' }]}>Welcome To 
+          <Text style={{ color: theme.colors.secondary }}> Pets</Text>
         </Text>
-        <Text style={{ color: theme.colors.gray, justifyContent: "center", fontSize: theme.sizes.h3 }}>Enjoy the experience.</Text>
+        <Text style={{ color: theme.colors.gray, justifyContent: "center", fontSize: theme.sizes.h3 }}>Lorem ipsum dolor.</Text>
       </View>
 
       <View style={styles.containerImage}>

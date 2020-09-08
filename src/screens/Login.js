@@ -13,9 +13,9 @@ const Login = (props) => {
     <View style={[styles.containerImage]}>
     <Image 
             style={style.logo}
-            source={require('../assets/images/tiger.jpg')}
+            source={require('../assets/images/dog.png')}
     />
-            <Text style={[style.h1, {marginTop: 20}]}>Sign In</Text>
+            <Text style={[style.h1, {marginTop: 20, color:theme.colors.secondary}]}>Sign In</Text>
     </View>
 
       <View style={styles.containerLogin}>

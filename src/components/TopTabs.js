@@ -7,7 +7,10 @@ const Tab = createMaterialTopTabNavigator();
 const TopTabs = ({data}) => {
 
     return (
-    <Tab.Navigator>
+    <Tab.Navigator
+    tabBarOptions={{
+      labelStyle: { fontSize: 12, fontWeight: "700"}}}
+      >
         {data.map(tab => <Tab.Screen key={tab.id} name={tab.name} component={HomeBody} />)}
     </Tab.Navigator>
   

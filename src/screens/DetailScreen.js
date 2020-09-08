@@ -5,14 +5,14 @@ import { theme } from '../constants'
 
 const DetailScreen = (props) => {
   return (
-    <View style={[styles.container, { backgroundColor: "red" }]}>
+    <View style={[styles.container, { backgroundColor: theme.colors.primary }]}>
       <View style={style.header}>
         <TouchableOpacity onPress={() => props.navigation.goBack()}>
           <Image style={style.backContainer} source={require('../assets/icons/back.png')} />
         </TouchableOpacity>
       </View>
       <View style={style.topContainer}>
-        <Image style={style.image} source={require('../assets/images/dog.png')} />
+        <Image style={style.image} source={require('../assets/images/labrador.png')} />
       </View>
       <View style={style.bottomContainer}>
         <View style={style.containerTitle}>
@@ -28,31 +28,29 @@ const DetailScreen = (props) => {
 
         <View style={style.containerInfo}>
           <View style={style.box}>
-            <Text style={styles.h3}>Age</Text> 
-            <Text style = {{marginTop: 5}}>10</Text>
+            <Text style={styles.h3}>Age</Text>
+            <Text style={{ marginTop: 5 }}>10</Text>
           </View>
           <View style={style.box}>
-            <Text>Color</Text> 
-            <Text style = {{marginTop: 5}}>10</Text>
+            <Text>Color</Text>
+            <Text style={{ marginTop: 5 }}>10</Text>
           </View>
           <View style={style.box}>
-            <Text>Sex</Text> 
-            <Text style = {{marginTop: 5}}>10</Text>
+            <Text>Sex</Text>
+            <Text style={{ marginTop: 5 }}>10</Text>
           </View>
         </View>
         <View style={style.containerDescription}>
-        <Text style={{paddingLeft: 20, paddingRight: 20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis convallis nisl in semper. Aliquam iaculis, nisi sit amet dapibus lobortis, mauris ex consectetur urna, a tempus neque risus ac nisl. Praesent dapibus elit sed justo varius, quis sollicitudin mauris posuere. Praesent hendrerit, tortor in egestas porttitor, nisl libero commodo magna, sed ultrices turpis nisi nec magna. Nam eget sem vel massa semper molestie vitae quis elit. Mauris eu sapien nulla. Maecenas et nisi eget sapien dignissim ornare. Praesent ut porttitor dolor, et condimentum sapien. Fusce et felis quis mi volutpat lobortis in vel tortor. Praesent mi ligula, convallis tincidunt odio id, vehicula faucibus magna. In imperdiet leo id dictum auctor. Vivamus eu enim pellentesque, tempus ipsum lobortis, scelerisque ipsum. Etiam vitae ex bibendum, molestie nibh at, tincidunt ex.</Text>
+          <Text style={{ paddingLeft: 20, paddingRight: 20 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis convallis nisl in semper. Aliquam iaculis, nisi sit amet dapibus lobortis, mauris ex consectetur urna, a tempus neque risus ac nisl. Praesent dapibus elit sed justo varius, quis sollicitudin mauris posuere. Praesent hendrerit, tortor in egestas porttitor, nisl libero commodo magna, sed ultrices turpis nisi nec magna. Nam eget sem vel massa semper molestie vitae quis elit. Mauris eu sapien nulla. Maecenas et nisi eget sapien dignissim ornare. Praesent ut porttitor dolor, et condimentum sapien. Fusce et felis quis mi volutpat lobortis in vel tortor. Praesent mi ligula, convallis tincidunt odio id, vehicula faucibus magna. In imperdiet leo id dictum auctor. Vivamus eu enim pellentesque, tempus ipsum lobortis, scelerisque ipsum. Etiam vitae ex bibendum, molestie nibh at, tincidunt ex.</Text>
         </View>
         <View style={style.containerAdoption}>
-        <TouchableOpacity style={{backgroundColor: "red", flex:1}} onPress={() => props.navigation.goBack()}>
-          <Image style={{height:40, width: 40, position:"absolute", right: 20, marginTop: 10}} source={require('../assets/icons/share.png')} />
-        </TouchableOpacity>
+          <TouchableOpacity style={{ backgroundColor: "red", flex: 1 }} onPress={() => props.navigation.goBack()}>
+            <Image style={{ height: 40, width: 40, position: "absolute", right: 20, marginTop: 10 }} source={require('../assets/icons/share.png')} />
+          </TouchableOpacity>
 
-        <TouchableOpacity style={{backgroundColor: "blue", flex:1, alignItems: "center"}} onPress={() => props.navigation.goBack()}>
-          {/* <View style={{borderRadius:20}}> */}
-          <Text style={{backgroundColor: "green", fontSize: 30, textAlign: "center", width: "90%", marginTop: 10, height: 50, paddingTop: 5, borderRadius: 20, overflow: "hidden", borderColor: "yellow", borderWidth: 1}}>Adoption</Text>
-          {/* </View> */}
-        </TouchableOpacity>
+          <TouchableOpacity style={{ backgroundColor: "blue", flex: 1, alignItems: "center" }} onPress={() => props.navigation.goBack()}>
+            <Text style={{ backgroundColor: "green", fontSize: 30, textAlign: "center", width: "90%", marginTop: 10, height: 50, paddingTop: 5, borderRadius: 20, overflow: "hidden", borderColor: "yellow", borderWidth: 1 }}>Adoption</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -69,17 +67,17 @@ const style = StyleSheet.create({
   },
   header: {
     height: 100,
-    backgroundColor: "red",
+    backgroundColor: theme.colors.primary,
   },
   topContainer: {
     flex: 1,
-    backgroundColor: "red",
+    backgroundColor: theme.colors.primary,
     alignItems: "center",
     justifyContent: "center"
   },
   bottomContainer: {
     flex: 2,
-    backgroundColor: "yellow",
+    backgroundColor: theme.colors.accent,
     borderRadius: 30,
   },
   image: {
@@ -100,9 +98,8 @@ const style = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10
   },
-  box:{
+  box: {
     flex: 1,
-    // height:40,
     backgroundColor: "green",
     borderRadius: 20,
     margin: 10,

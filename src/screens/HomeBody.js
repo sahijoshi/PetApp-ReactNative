@@ -1,6 +1,8 @@
 import React from 'react'
 import { Text, StyleSheet, FlatList, View, Dimensions, TouchableWithoutFeedback, Image } from 'react-native'
 import { categories } from '../constants/mocks'
+import { theme } from '../constants'
+import styles from '../styles/Styles'
 
 const numberOfCol = 2;
 const WIDTH = Dimensions.get('window').width
@@ -26,25 +28,25 @@ const HomeBody = (props) => {
 
   renderItem = ({ item, index }) => {
     if (item.empty) {
-      return <View style={[styles.image, styles.itemInvisible]} />
+      return <View style={[style.image, style.itemInvisible]} />
     }
     return (
       <TouchableWithoutFeedback onPress={() => actionOnItem(item)}>
-        <View style={styles.itemStyleContainer}>
+        <View style={style.itemStyleContainer}>
+          <View style={style.imageContiner}>
           <Image
-            style={styles.image}
-            source={require('../assets/images/tiger.jpg')}
+            style={style.image}
+            source={item.image}
           />
-          <Text style={styles.itemText}>{item.name}</Text>
+          </View>
+          <Text style={[style.itemText, styles.h2]}>{item.name}</Text>
         </View>
       </TouchableWithoutFeedback>
-
     )
   }
 
-
   return (
-    <View style={{ flex: 1, backgroundColor: "yellow" }}>
+    <View style={styles.container}>
       <FlatList
         keyExtractor={(item) => item.id}
         data={dataFormat(categories, numberOfCol)}
@@ -55,24 +57,35 @@ const HomeBody = (props) => {
   )
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   itemStyleContainer: {
-    backgroundColor: "blue",
     justifyContent: "center",
     flex: 1,
     margin: 10,
-    height: WIDTH / numberOfCol + 40
+    height: WIDTH / numberOfCol + 40,
+    overflow: "hidden",
+    shadowColor: theme.colors.accent,
+    shadowRadius: 50,
+    shadowOpacity: 1
   },
   image: {
-    resizeMode: "cover",
+    resizeMode: "contain",
     flex: 1,
+    width: "80%",
+    height: "80%",
+  },
+  imageContiner: {
+    flex: 1,
+    backgroundColor: theme.colors.accent,
     width: "100%",
-    height: WIDTH / numberOfCol
+    height: WIDTH / numberOfCol,
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center"
   },
   itemText: {
     color: "gray",
     fontSize: 20,
-    backgroundColor: "green",
     height: 40,
     textAlign: "left",
     paddingTop: 10

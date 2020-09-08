@@ -11,13 +11,14 @@ const Home = () => {
     const tabArray = [
         { id: 1, name: "Dogs" }, 
         { id: 2, name: "Cats" }, 
-        { id: 3, name: "Birds"}
+        { id: 3, name: "Birds"},
+        { id: 4, name: "Others"}
     ];
 
   return (
       <View style={ style.container }>
           <View style={ styles.header }>
-              <Text style={ [style.h1, { color: theme.colors.darkGray }] }>Pets</Text>
+              <Text style={ [style.h2, { color: theme.colors.white, marginLeft: 10 }] }>Pets By Category</Text>
           </View>
           <TopTabs data={tabArray}/>
       </View>
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingTop: 10,
         height: 50,
-        backgroundColor: "red"
+        backgroundColor: theme.colors.secondary
     },
     tab: {
         height: 50,
